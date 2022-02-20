@@ -20,12 +20,11 @@ const updateUI =(data) => {
     `;
 
 
-    const iconSrc = `img/icons/${weather.WeatherIcon}.svg`;
-    icon.setAttribute('src', iconSrc)
-
-
-    const timeSrc = weather.isDayTime ? 'img/day.svg' : 'img/night.svg';
-    time.setAttribute('src', timeSrc);
+  const iconSrc = `img/icons/${weather.WeatherIcon}.svg`;
+  icon.setAttribute('src', iconSrc);
+  
+  const timeSrc = weather.IsDayTime ? 'img/day.svg' : 'img/night.svg';
+  time.setAttribute('src', timeSrc);
 
     if(card.classList.contains('d-none')){
         card.classList.remove('d-none')
