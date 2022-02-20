@@ -24,7 +24,7 @@ const updateUI =(data) => {
     icon.setAttribute('src', iconSrc)
 
 
-    let timeSrc = weather.isDayTime ? 'img/day.svg' : 'img/night.svg';
+    const timeSrc = weather.isDayTime ? 'img/day.svg' : 'img/night.svg';
     time.setAttribute('src', timeSrc);
 
     if(card.classList.contains('d-none')){
